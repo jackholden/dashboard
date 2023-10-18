@@ -1,3 +1,12 @@
+![image](https://github.com/jackholden/dashboard/assets/75576058/965d33f4-ae12-4604-83d4-91fe39bfdabb)
+
+![image](https://github.com/jackholden/dashboard/assets/75576058/fea436cd-894e-4ad3-ad49-06f5b88769dd)
+
+![image](https://github.com/jackholden/dashboard/assets/75576058/c07c5891-17a9-423e-919b-611438bf3038)
+
+![image](https://github.com/jackholden/dashboard/assets/75576058/32fadb6a-0617-4ec5-94ce-a67efda6a659)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
