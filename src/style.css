@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --app-bg: #f1f6fd;
+  --bar-height: 50px;
+  --sidebar-width: 10rem;
+}
+
+.f-1rem {
+  font-size: 1rem;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.simpinv-dark-bg {
+  background-color: #1f2532;
+}
+
+.app-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+}
+
+.app-header .desktop-only {
+  display: none;
+}
+
+.app-header .actions-nav {
+  display: flex;
+  align-items: center;
+}
+
+.app-sidenav {
+  display: none;
+}
+
+.app-sidenav nav a span.sidenav-name {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .app-layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+  }
+
+  .app-sidenav {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    min-width: 100px;
+    background: #1f2532;
+  }
+
+  .app-sidenav.expanded {
+    width: 250px;
+  }
+
+  .app-sidenav.expanded nav a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .app-sidenav.expanded nav a span.sidenav-name {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .app-sidenav.expanded nav a svg {
+    margin-left: 0;
+    margin-right: 1.2rem;
+  }
+
+  .app-sidenav nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-sidenav nav a {
+    color: #6b7685;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .app-sidenav nav a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .app-sidenav:not(.expanded) nav a:hover span.sidenav-tooltip {
+    display: block;
+  }
+
+  .app-sidenav nav a svg {
+    display: block;
+    margin: auto;
+    font-size: 3rem;
+  }
+
+  .app-sidenav nav a.bold-active {
+    color: #00d768;
+  }
+
+  .app-sidenav button {
+    margin: auto auto 1rem auto;
+    font-size: 3rem;
+  }
+
+  .app-sidenav .app-logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .app-sidenav .app-logo a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.3rem;
+  }
+
+  .app-sidenav .sidenav-tooltip {
+    position: absolute;
+    left: 6rem;
+    margin: 0.5rem;
+    width: auto;
+    min-width: max-content;
+    border-radius: 0.375rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color: #1f2532;
+    display: none;
+  }
+
+  .app-header {
+    grid-column: 2;
+    grid-row: 1 / 2;
+    background: #f8f9fb;
+    padding: 0px 6rem;
+  }
+
+  .app-header .mobile-only {
+    display: none;
+  }
+
+  .app-header .desktop-only {
+    display: block;
+    min-width: 30rem;
+  }
+
+  .app-main {
+    grid-column: 2;
+    grid-row: 2 / 3;
+  }
+
+  .page-header {
+    background: #f8f9fb;
+    padding: 4rem 6rem 12rem 6rem;
+  }
+
+  .page-header h1 {
+    color: #1f2532;
+  }
+
+  .page-header h1,
+  .page-header .prevBtn svg {
+    font-size: 4rem;
+  }
+
+  .container-temp {
+    margin: -6rem 6rem 12rem 6rem;
+  }
+}
